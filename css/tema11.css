@@ -1,0 +1,57 @@
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.ixd-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.img-ip {
+    width: 350px;
+    height: auto; /* Mantiene la proporción original */
+}
+.barra-izq {
+    border-left: 2px solid black;  /* Línea izquierda */
+    padding: 20px;
+    margin: 20px 0;
+    margin-right: 30px;
+    padding-left: 20px;
+
+}
+
+.barra-der {
+    border-right: 2px solid black;  /* Línea izquierda */
+    padding: 20px;
+    margin: 20px 0;
+    margin-left: 50px;
+    padding-right: 20px;
+}
+
+.row {
+    margin-bottom: 20px; /* Añadir espacio entre filas */
+}
+
+.col-md-6 {
+    padding: 20px; /* Añadir espacio interno */
+}
+

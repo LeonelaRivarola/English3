@@ -1,0 +1,59 @@
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.card {
+    position: relative;
+    margin-bottom: 30px; /* Ajusta el valor según lo que necesites */
+  }
+  /* Ajuste general para imágenes */
+img.img-fluid {
+    display: flex;
+    align-items: center; /* Alinea verticalmente las imágenes con el texto */
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-left: 10px; /* Ajusta el espaciado según lo necesites */
+    width: 70px; /* Tamaño de los logotipos */
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Limita el tamaño máximo de las imágenes en los bloques de texto */
+.card img {
+    max-height: 300px; /* Establece un límite para la altura de las imágenes */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin deformarse */
+}
+
+.loguito {
+    position: absolute;  /* Hacemos que el logo tenga una posición absoluta */
+    top: 10px;  /* Espacio desde la parte superior */
+    right: 10px;  /* Espacio desde la parte derecha */
+    width: 70px;  /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.x{
+    width: 60px !important;
+}

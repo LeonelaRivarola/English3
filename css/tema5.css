@@ -1,0 +1,65 @@
+.diseño-navegacion {
+    border-left: 2px solid black;  /* Línea izquierda */
+    border-right: 2px solid black; /* Línea derecha */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.diseño-navegacion .col-md-4 img {
+    border: none; /* Asegura que la imagen no tenga bordes */
+    display: flex;
+    align-items: left;
+    margin: 0 auto; /* Centra la imagen */
+    max-width: 90%; /* Aumenta el tamaño de la imagen al 90% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.ixd-container {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.ixd-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.ixd-list li {
+    margin-bottom: 10px;
+}
+
+.ixd-list li strong {
+    color: #34495e;
+}
+
+.ixd-container p, .ixd-container ul {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+

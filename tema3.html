@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo">
+                Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <h1 class="text-center">&lt;&gt; Lenguaje HTML &lt;/&gt;</h1>
+        <hr>
+
+        <section class="mt-4">
+            <h2 class="ixd-title">Introducción al HTML</h2>
+            <div class="contenedor-introduccion">
+                <img src="img/html.png" alt="Imagen HTML" class="imagen-al-lado">
+                <div class="texto-introduccion">
+                    <p class="ixd-description">HTML se utiliza para crear páginas web. Consta de un conjunto de elementos, denominados
+                        etiquetas, que se
+                        usan para incluir textos, imágenes, tablas, etc. La mayoría de las etiquetas se desdoblan en
+                        dos, una de
+                        comienzo y otra de fin; y un conjunto de atributos.</p>
+                    <p class="ixd-description">NO es una etiqueta HTML. En realidad, es un elemento de SGML ("Lenguaje de Marcas Generalizado
+                        Estándar"). HTML es, en realidad, un lenguaje escrito en SGML.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h3 class="sub-title">Elementos de la Cabecera</h3>
+
+            <div class="contenedor-introduccion">
+
+                <ul>
+                    <li><strong>&lt;title&gt;</strong>: título de la página que aparecerá en los navegadores. Los
+                        buscadores
+                        lo utilizan para clasificar las páginas.</li>
+                    <li><strong>&lt;link&gt;</strong>: para relacionar documentos como las hojas de estilo.</li>
+                    <li><strong>&lt;meta&gt;</strong>: sirve para incluir información sobre el autor de la página,
+                        nombre
+                        del editor de HTML, una descripción breve de la página, etc.</li>
+                </ul>
+                <img src="img/html5.png" alt="Imagen HTML" class="imagen-al-lado">
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h3 class="sub-title">Descripción de Meta Tags</h3>
+            <p class="ixd-description">El meta tag <code class="language-html">&lt;meta name="nombre" content="contenido"&gt;</code> puede
+                contener:</p>
+            <ul>
+                <li><strong>description</strong>: Describe el contenido de la página.</li>
+                <li><strong>keywords</strong>: Lista de palabras clave relacionadas con el tema de la página.</li>
+            </ul>
+        </section>
+
+        <section class="mt-4">
+            <h3 class="sub-title"> Listas</h3>
+            <div class="list-container border rounded p-3">
+                <div class="row">
+                    <!-- Columna de Listas Ordenadas -->
+                    <div class="col-md-6">
+                        <h4 class="sub-sub-title">Listas Ordenadas</h4>
+                        <pre><code class="language-html">&lt;ol&gt; ... &lt;/ol&gt;</code></pre>
+                        <ul>
+                            <li><code>&lt;li&gt;</code> Elementos de la lista.</li>
+                        </ul>
+                    </div>
+                    <!-- Columna de Listas No Ordenadas -->
+                    <div class="col-md-6">
+                        <h4 class="sub-sub-title">Listas No Ordenadas</h4>
+                        <pre><code class="language-html">&lt;ul&gt; ... &lt;/ul&gt;</code></pre>
+                        <ul>
+                            <li><code>&lt;li&gt;</code> Elementos de la lista.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <h3 class="sub-title">Enlaces e Hiperenlaces</h3>
+
+        <section class="mt-4 terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn red"></span>
+                    <span class="btn yellow"></span>
+                    <span class="btn green"></span>
+                </div>
+                <span class="terminal-title">Código HTML</span>
+            </div>
+            <div class="terminal-body">
+
+                <h4 class="comment comentario">&lt;!-- Al mismo documento --&gt;</h4>
+                <pre><code class="language-html">&lt;a href="#nombre"&gt; Texto del enlace &lt;/a&gt;</code></pre>
+
+                <h4 class="comment comentario">&lt;!-- A otros documentos --&gt;</h4>
+                <pre><code class="language-html">&lt;a href="destino"&gt; Texto del enlace &lt;/a&gt;</code></pre>
+
+                <h4 class="comment comentario">&lt;!-- A contenidos especiales --&gt;</h4>
+                <pre><code class="language-html">&lt;a href="archivo.ps"&gt; Enlace a un archivo Postscript &lt;/a&gt;</code></pre>
+                <pre><code class="language-html">&lt;a href="mailto:usuario@direccion"&gt; Enviar un email &lt;/a&gt;</code></pre>
+            </div>
+        </section>
+
+        <section class="mt-4">
+            <h3 class="sub-title">Imágenes</h3>
+            <pre><code class="language-html">&lt;img src="foto.gif" alt="Texto alternativo" title="Descripción" width="120" height="200"&gt;</code></pre>
+        </section>
+
+        <section class="mt-4">
+            <h3 class="sub-title">Tablas</h3>
+            <pre><code class="language-html">&lt;table&gt; ... &lt;/table&gt;</code></pre>
+            <ul>
+                <li><strong>&lt;th&gt;</strong>: Celda cabecera de una tabla.</li>
+                <li><strong>&lt;caption&gt;</strong>: Asigna un título a la tabla.</li>
+                <li><strong>&lt;tr&gt;</strong>: Marca el comienzo de una fila de la tabla.</li>
+                <li><strong>&lt;td&gt;</strong>: Celda de datos de una tabla.</li>
+            </ul>
+        </section>
+
+        <div class="row">
+            <div class="col-md-6">
+                <section class="mt-4">
+                    <h3 class="sub-title">Formularios</h3>
+                    <p class="ixd-description">Los formularios permiten la interacción entre el código HTML y los scripts. Son usados para
+                        enviar y
+                        recibir datos, proporcionando retroalimentación al sistema de información.</p>
+                </section>
+
+            </div>
+            <div class="col-md-6">
+                <section class="mt-4">
+                    <h2 class="sub-sub-title">Atributos en Formularios</h2>
+                    <ul>
+                        <li><strong>autocomplete</strong>: autocompleta el input basado en valores previos del usuario.
+                        </li>
+                        <li><strong>novalidate</strong>: especifica que los datos del formulario no deben ser validados
+                            al
+                            enviarse.</li>
+                        <li><strong>autofocus</strong>: recibe automáticamente el foco cuando se carga la página.</li>
+                        <li><strong>placeholder</strong>: muestra una sugerencia en el campo de entrada.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+        <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+        <button id="btnScrollTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+</body>
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

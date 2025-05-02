@@ -1,0 +1,258 @@
+.logo {
+    height: 60px;
+    width: 80px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Botones llamativos */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-custom {
+    background-color: #2c3e50 ; /* Color oscuro */
+    color: white; /* Texto blanco */
+    border: 2px solid white ; /* Borde blanco */
+}
+
+.btn-custom:hover {
+    background-color: #00c7ff ; /* Un poco más oscuro al pasar el mouse */
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.container {
+    padding: 0px;
+}
+
+/* Título de bienvenida con efecto de texto */
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+p.lead {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-top: 20px;
+}
+
+/* Sidebar */
+.nav {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-link {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* Contenido principal */
+.col-md-9, .col-lg-10 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+.navbar-brand img {
+    width: 50px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #ffc107 !important; /* Amarillo Bootstrap */
+    background-color: rgba(255, 255, 255, 0.1); /* Resaltado sutil */
+    border-left: 4px solid #ffc107;
+}
+
+.row {
+    margin-bottom: 30px;
+}
+
+.offcanvas-header h5 {
+    color: #e0f2f7 !important;
+}
+
+.menu-divider {
+    border: none;
+    height: 2px;
+    background-color: #ffffff; /* Color blanco */
+    width: 80%; /* Hace que la línea sea más pequeña en los costados */
+    margin: 10px auto; /* Centrar la línea y agregar espacio arriba y abajo */
+    opacity: 0.7; /* Un poco de transparencia */
+}
+
+.section-header {
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.section-intro {
+    margin-top: 50px; /* Ajusta según sea necesario */
+}
+@media (max-width: 768px) {
+    .section-intro {
+        margin-top: 10px; /* Ajusta el margen en dispositivos pequeños */
+    }
+    
+    .carousel {
+        margin-bottom: 5px;
+    }
+}
+
+/* Estilo para el título que debe moverse con el scroll */
+.welcome-title {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    /* padding-top: 20px; */
+    transform: translateX(-50%);
+    background-color: white; /* Fondo blanco para que no se mezcle con el contenido */
+    z-index: 1000;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-title h1,
+.welcome-title p {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto cuando el carrusel está en vista */
+.welcome-title.hide {
+    top: -100px;
+    /* Ajusta esto para mover el título fuera de la vista */
+    opacity: 0;
+    /* Hacerlo transparente */
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+#btnScrollTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#btnScrollTop:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+
+#btnScrollTop.show {
+    opacity: 1;
+    visibility: visible;
+}
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.ixd-list {
+    list-style-type: none;
+    padding-left: 0;
+}

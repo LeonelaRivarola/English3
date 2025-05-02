@@ -1,0 +1,77 @@
+.img-ajax {
+    width: 100%; /* Esto hace que la imagen se ajuste al 100% del ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  .ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.x{
+    margin-top: 40px; /* Añade espacio encima del h2 */
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Ajusta el margen inferior del título */
+}
+
+p {
+    margin-top: 0; /* Elimina el margen superior de los párrafos */
+    margin-bottom: 5px; /* Reduce el margen inferior entre los párrafos */
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.5em;
+    margin-top: 10px;
+    display: inline; /* Esto hace que los h2 se alineen en la misma línea */
+}
+
+.a{
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+/* Reducir el padding y márgenes del contenedor */
+.container {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Reducir el margen superior del footer */
+.footer {
+    margin-top: 20px; /* Ajusta este valor según lo que necesites */
+    padding: 1.5rem;}
+
+/* Si quieres que la tarjeta (card) tenga menos espacio */
+.card {
+    padding: 2rem; /* Ajusta según el espacio que quieras */
+}
+
+.ixd-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sub-sub-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #f4f4f4;  /* Fondo gris claro para el código */
+    border: 1px solid #ccc;  /* Borde alrededor del bloque de código */
+    padding: 10px;  /* Espaciado interno */
+    overflow-x: auto;  /* Asegura que el código largo se pueda desplazar horizontalmente */
+}
+
+code {
+    font-family: "Courier New", monospace;  /* Fuente monoespaciada */
+    white-space: pre-wrap;  /* Permite que el texto se ajuste al ancho del contenedor */
+}

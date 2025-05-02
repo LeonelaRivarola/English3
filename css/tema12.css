@@ -1,0 +1,122 @@
+.carousel-inner {
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+}
+.carousel-item img {
+    height: 400px; 
+    object-fit: cover; 
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    padding: 15px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%); 
+}
+.carousel-indicators button {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: #fff; 
+}
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.carousel-caption p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+.carousel-caption h5,
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+    color: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+    .carousel-inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.col-md-6 {
+    border-left: 1px solid #ddd; 
+}
+
+.no-border {
+    border-left: none; 
+}
+
+.info-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.info-box .content {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.info-box .content h3 {
+    margin-top: 0;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-box li {
+    margin-bottom: 10px;
+}
+
+.info-box code {
+    background-color: #e9ecef;
+    padding: 3px 6px;
+    border-radius: 5px;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquitectura Cliente-Servidor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema9.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo"> Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Arquitectura Cliente-Servidor</h1>
+        <hr>
+
+        <h2 class="ixd-title">Introducción a Internet y la Arquitectura Cliente/Servidor</h2>
+        <h3 class="sub-title">1. Arquitectura Cliente/Servidor:</h3>
+        <ul>
+            <li><strong>Cliente:</strong> Inicia la comunicación.</li>
+            <li><strong>Servidor:</strong> Siempre activo, esperando peticiones.</li>
+            <li>Múltiples clientes heterogéneos en cuanto a sistemas operativos, software y hardware.</li>
+        </ul>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="sub-title">2. Componentes clave de Internet</h3>
+                <ul>
+                    <li><strong>Cliente:</strong> Interfaz y navegación.</li>
+                    <li><strong>Servidor:</strong> Lógica de negocio, procesamiento de solicitudes.</li>
+                    <li><strong>Datos:</strong> Almacenamiento persistente en bases de datos.</li>
+                </ul>
+                <h3 class="sub-title">3. Infraestructura de Red</h3>
+                <ul>
+                    <li><strong>Protocolo TCP/IP:</strong> Base de la comunicación en Internet.</li>
+                    <li><strong>HTTP:</strong> Protocolo principal para la web.</li>
+                    <li>Capas de red y aplicaciones disponibles.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/arquitectura.png" class="d-block w-100 img-border" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/arquitectura1.png" class="d-block w-100 img-border" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/arquitectura2.png" class="d-block w-100 img-border" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <h3 class="sub-title">Problemas asociados a Internet</h3>
+        <p class="ixd-description"><strong>Sobre carga del servidor:</strong> Cuando un único servidor atiende
+            demasiados clientes, el
+            rendimiento del sistema decrece exponencialmente.</p>
+
+            <hr>
+        <h2 class="ixd-title">Arquitectura Cliente/Servidor en detalle</h2>
+        <ul>
+            <li><strong class="sub-sub-title">Capas del software:</strong></li>
+            <ul>
+                <li><strong>Presentación:</strong> Clientes y su interfaz gráfica.</li>
+                <li><strong>Lógica de negocio:</strong> Procesos y reglas implementadas en el servidor.</li>
+                <li><strong>Persistencia:</strong> Gestión de datos mediante bases de datos.</li>
+            </ul>
+            <li><strong class="sub-sub-title">Elementos de toda aplicación:</strong></li>
+            <ul>
+                <li><strong>Presentación:</strong> Diseño de interfaces y experiencia de usuario.</li>
+                <li><strong>Lógica:</strong> Procesos de negocio que gestionan las solicitudes del cliente.</li>
+                <li><strong>Datos:</strong> Información almacenada en bases de datos.</li>
+            </ul>
+        </ul>
+
+
+
+        <h3 class="sub-title">** Arquitecturas ** </h3>
+        <p class="ixd-description"><strong>Definición:</strong> Las arquitecturas definen cómo se estructuran los
+            sistemas de software según sus
+            capas o niveles.</p>
+        <p class="sub-sub-title"><strong>Tipos principales:</strong></p>
+        <ul>
+            <li>Monolíticos (One Tier): Todo en un solo módulo.</li>
+            <li>Cliente/Servidor (Two Tier): Separación entre cliente y servidor.</li>
+            <li>Tres Capas (Three Tier): Presentación, lógica de negocio y datos en capas separadas.</li>
+            <li>N Capas (N Tier): División más fina en varias capas especializadas.</li>
+        </ul>
+
+        <p class="ixd-description">Las arquitecturas evolucionaron desde sistemas monolíticos simples hacia modelos
+            distribuidos complejos para
+            resolver problemas de escalabilidad, mantenimiento y usabilidad. La elección de una arquitectura depende del
+            contexto del sistema, necesidades de escalabilidad, flexibilidad y costos.</p>
+
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3 class="sub-title">1. Sistemas Monolíticos (Una Capa)</h3>
+                    <ul>
+                        <li><strong>Características:</strong> Todo (datos, lógica de negocio, presentación) en un solo
+                            módulo.</li>
+                        <li><strong>Desventajas:</strong>
+                            <ul>
+                                <li>Difícil identificar cambios.</li>
+                                <li>Problemas de rendimiento y escalabilidad.</li>
+                                <li>Baja reutilización de código.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3 class="sub-title">2. Arquitectura Cliente/Servidor (Dos Capas)</h3>
+                    <ul>
+                        <li><strong>Características:</strong>
+                            <ul>
+                                <li>Cliente realiza la interfaz de usuario.</li>
+                                <li>Servidor gestiona datos y lógica de negocio.</li>
+                                <li><strong>Tipos de cliente:</strong> Cliente pesado (fat client), Cliente liviano
+                                    (thin client).
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Ventajas:</strong>
+                            <ul>
+                                <li>Mejor escalabilidad y flexibilidad.</li>
+                                <li>Datos centralizados evitan duplicaciones.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Desventajas:</strong>
+                            <ul>
+                                <li>Puede generar alto tráfico de red.</li>
+                                <li>Aplicaciones cliente tienden a ser monolíticas.</li>
+                                <li>Dificultad para reutilizar código y escalar.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 ">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3 class="sub-title">3. Arquitectura de Tres Capas (Three Tier)</h3>
+                    <ul>
+                        <li><strong>Características:</strong>
+                            <ul>
+                                <li>Separación lógica y física de: Presentación, Negocio, Datos.</li>
+                                <li>Introduce una capa intermedia (Middle Tier Server) para reglas de negocio.</li>
+                                <li>Facilita mantenimiento, escalabilidad y reusabilidad.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Usos comunes:</strong>
+                            <ul>
+                                <li>Aplicaciones en internet.</li>
+                                <li>Sistemas distribuidos.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Desventajas:</strong>
+                            <ul>
+                                <li>Construcción más compleja.</li>
+                                <li>Herramientas de desarrollo limitadas en ocasiones.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h3 class="sub-title">4. Arquitectura de N Capas (N Tier)</h3>
+                    <ul>
+                        <li><strong>Características:</strong>
+                            <ul>
+                                <li>Divisiones más específicas: acceso a datos, reglas de negocio, lógica de
+                                    presentación.</li>
+                                <li><strong>Ejemplo de capas:</strong>
+                                    <ul>
+                                        <li>Capa de Datos: Gestión de la base de datos (MySQL, Oracle, etc.).</li>
+                                        <li>Capa de Acceso a Datos: Métodos para interactuar con la base de datos (ej.
+                                            JDBC).</li>
+                                        <li>Capa de Negocio: Regla de negocio y manipulación de datos.</li>
+                                        <li>Capa de Presentación: Interacción con el usuario.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Ventajas:</strong>
+                            <ul>
+                                <li>Adaptabilidad a entornos distribuidos.</li>
+                                <li>Facilita el uso de tecnologías modernas.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+       
+
+    </div>
+
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

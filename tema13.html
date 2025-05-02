@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - Asynchronous JavaScript and XML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema13.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo"> Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">AJAX: Asynchronous JavaScript and XML</h1>
+        <hr>
+        <div class="card p-4 mb-4">
+            <h2 class="ixd-title">¿Qué es AJAX?</h2>
+            <p class="ixd-description">AJAX (Asynchronous JavaScript and XML) es una técnica de desarrollo web utilizada
+                para crear aplicaciones
+                interactivas (RIA). Permite la comunicación entre el cliente y el servidor de manera asíncrona, lo que
+                significa que se pueden solicitar datos sin recargar toda la página.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="sub-title">Tecnologías que componen AJAX</h3>
+                <ul>
+                    <li><strong>JavaScript:</strong> Para interactuar con el cliente y manipular el contenido de la
+                        página.
+                    </li>
+                    <li><strong>XHTML:</strong> Para estructurar la información.</li>
+                    <li><strong>CSS:</strong> Para dar estilo a la presentación.</li>
+                    <li><strong>XML y JSON:</strong> Para el intercambio de datos entre el cliente y el servidor.</li>
+                    <li><strong>DOM (Document Object Model):</strong> Para manipular dinámicamente la estructura de la
+                        página.</li>
+                    <li><strong>XMLHttpRequest:</strong> Para realizar las peticiones asíncronas al servidor.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3 class="sub-title">Funcionamiento de AJAX</h3>
+                <p><strong>1. Evento del usuario:</strong> Cuando el usuario interactúa con la página (por ejemplo,
+                    haciendo clic en un botón), se crea un objeto de AJAX usando XMLHttpRequest.</p>
+                <p><strong>2. Petición al servidor:</strong> El objeto AJAX envía una petición al servidor con un método
+                    GET o POST.</p>
+                <p><strong>3. Procesamiento del servidor:</strong> El servidor procesa la petición y envía la respuesta,
+                    que puede ser un archivo XML o JSON.</p>
+                <p><strong>4. Actualización de la página:</strong> El cliente procesa los datos recibidos y actualiza la
+                    página sin necesidad de recargarla.</p>
+            </div>
+        </div>
+
+
+        <h2 class="ixd-title x">Diferencia entre Modelo Tradicional y Modelo AJAX</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Modelo Tradicional</th>
+                    <th>Modelo AJAX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Recarga de la página</td>
+                    <td>Cada interacción con el servidor provoca la recarga completa de la página.</td>
+                    <td>Permite actualizar partes de la página de manera dinámica sin recargarla por completo.</td>
+                </tr>
+                <tr>
+                    <td>Experiencia del usuario</td>
+                    <td>La recarga completa de la página puede hacer que la experiencia del usuario sea más lenta y
+                        menos fluida.</td>
+                    <td>Mejora la experiencia del usuario al permitir una navegación más rápida y dinámica.</td>
+                </tr>
+                <tr>
+                    <td>Uso de recursos</td>
+                    <td>El modelo tradicional puede usar más recursos debido a la recarga completa de la página.</td>
+                    <td>AJAX usa menos recursos al cargar solo las partes necesarias de la página.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="sub-title">Consideraciones de uso de AJAX</h3>
+                <ul>
+                    <li><strong>Problemas con el historial:</strong> Las páginas generadas por AJAX no se registran
+                        automáticamente en el historial del navegador.</li>
+                    <li><strong>Problemas de accesibilidad:</strong> Algunas aplicaciones AJAX pueden no ser
+                        completamente
+                        accesibles para personas con discapacidades si no se implementan correctamente.</li>
+                    <li><strong>Política de mismo origen:</strong> Los navegadores bloquean las peticiones AJAX a
+                        dominios
+                        diferentes al servidor original. Se puede solucionar con CORS.</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <img src="img/ajax.png" alt="logo ajax" class="img-ajax">
+            </div>
+        </div>
+
+
+        <h2 class="sub-sub-title a">Ejemplo</h2>
+        <h2 class="sub-sub-title"> de aplicación AJAX</h2>
+        <p>Este es un ejemplo básico de cómo cargar contenido asíncronamente usando AJAX:</p>
+        <pre>
+<code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;AJAX Ejemplo&lt;/title&gt;
+        &lt;script type="text/javascript"&gt;
+            function cargarContenido() {
+                var peticion_http = new XMLHttpRequest();
+                peticion_http.onreadystatechange = function() {
+                    if (peticion_http.readyState == 4 && peticion_http.status == 200) {
+                        document.getElementById("contenido").innerHTML = peticion_http.responseText;
+                    }
+                };
+                peticion_http.open('GET', 'archivo.txt', true);
+                peticion_http.send(null);
+            }
+        &lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;button onclick="cargarContenido()"&gt;Cargar Contenido&lt;/button&gt;
+        &lt;div id="contenido"&gt;&lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code>
+            </pre>
+    </div>
+
+
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

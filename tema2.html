@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Páginas Estáticas y Dinámicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo">
+            Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <h1 class="text-center">Páginas Estáticas y Dinámicas</h1>
+    <hr>
+
+
+
+    <div class="container mt-4">
+        <div class="card p-4">
+            <img src="img/tema2.jpg" class="tema2" alt="paginas estaticas y dinamicas 
+            ">
+    
+            <div class="contenedor-secciones">
+                <div class="columna">
+                    <h2>Páginas Estáticas</h2>
+                    <p>Las páginas estáticas son aquellas que muestran el mismo contenido a todos los usuarios sin
+                        interacción con una base de datos ni procesamiento en el servidor.</p>
+                    <h4>Ejemplos:</h4>
+                    <ul>
+                        <li>Portafolios personales</li>
+                        <li>Landing pages</li>
+                        <li>Documentación técnica</li>
+                        <li>Blogs sin backend</li>
+                    </ul>
+                    <h4>Ventajas:</h4>
+                    <ul>
+                        <li>Fácil desarrollo y mantenimiento.</li>
+                        <li>Rápida carga al no requerir procesamiento en el servidor.</li>
+                        <li>Mayor seguridad, ya que no interactúan con bases de datos.</li>
+                    </ul>
+                    <h4>Desventajas:</h4>
+                    <ul>
+                        <li>No permiten personalización para los usuarios.</li>
+                        <li>Dificultad para actualizar contenido sin modificar el código.</li>
+                    </ul>
+                </div>
+                <div class="columna">
+                    <h2>Páginas Dinámicas</h2>
+                    <p>Capacidad de procesamiento de información que puede realizarse en el cliente, servidor o de
+                        manera
+                        mixta.
+                    </p>
+
+                    <h4>Tipos:</h4>
+                    <ul>
+                        <li>Procesamiento en el equipo del usuario (cliente).</li>
+                        <li>Procesamiento en el servidor web.</li>
+                        <li>Procesamiento mixto (cliente + servidor).</li>
+                    </ul>
+
+                    <h4>Ventajas:</h4>
+                    <ul>
+                        <li>Reduce la carga en el servidor.</li>
+                        <li>Ahorro de ancho de banda.</li>
+                        <li>Respuestas inmediatas a los usuarios.</li>
+                        <li>Validación interactiva de datos en formularios.</li>
+                        <li>Uso de recursos locales como memoria, disco y CPU.</li>
+                    </ul>
+
+                    <h4>Desventajas:</h4>
+                    <ul>
+                        <li>Dependencia del navegador.</li>
+                        <li>Menos seguridad.</li>
+                        <li>Dificultad para actualizar navegadores.</li>
+                        <li>No puede resolver problemas centralizados.</li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+            <div class="columna2 mt-4">
+
+                <section>
+                    <h3 class="ixd-title">Páginas Dinámicas en el Cliente</h3>
+                    <h4>Tecnologías de Programación:</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>JavaScript (DOM)</li>
+                        <li>CSS</li>
+                        <li>AJAX</li>
+                        <li>React</li>
+                        <li>Express</li>
+                        <li>Angular</li>
+                        <li>Next.js</li>
+                        <li>Vue</li>
+                        <li>Swift</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="ixd-title">Páginas Dinámicas en el Servidor</h3>
+                    <h4>Tecnologías de Programación:</h4>
+                    <ul>
+                        <li>JavaScript (Node.js)</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>Spark Java</li>
+                        <li>Python</li>
+                        <li>Apache Velocity</li>
+                        <li>ASP.NET de Microsoft</li>
+                        <li>CGI (C, Perl, etc.)</li>
+                    </ul>
+                </section>
+            </div>
+
+            
+        </div>
+        <button id="btnScrollTop">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

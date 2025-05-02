@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Programación Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo">
+                Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Carrusel -->
+    <div class="container mt-4">
+        <header class="text-center mb-4">
+            <h1 class="fw-bold">¡Bienvenido a Programación Web!</h1>
+            <p class="lead">Aquí aprenderás sobre el mundo de Internet, la Web, HTML, CSS, y mucho más. ¡Comencemos!</p>
+        </header>
+
+        <div id="carouselExample" class="carousel slide mb-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/inicio1.avif" class="d-block w-100 rounded-3 shadow-lg" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/inicio2.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/inicio3.jpg" class="d-block w-100 rounded-3 shadow-lg" alt="Imagen 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <hr>
+
+        <section class="text-center section-intro">
+            <h2 class="ixd-title">Introducción a Internet y la Web</h2>
+            <p class="ixd-description">Internet es un conjunto de redes interconectadas que permiten el acceso a
+                información y
+                servicios.</p>
+        </section>
+    </div>
+
+    <!-- Tema Principal -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="sub-title">Características</h3>
+                <ul class="ixd-list">
+                    <li>- Acceso público y privado</li>
+                    <li>- Gran número de usuarios</li>
+                    <li>- Requiere seguridad</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3 class="sub-title">Intranet vs Extranet</h3>
+                <p><strong>Intranet:</strong> Red privada con acceso restringido.</p>
+                <p><strong>Extranet:</strong> Red privada con acceso desde Internet, usada por empresas.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="sub-title">Etapas de la Web</h3>
+                <ul>
+                    <li><strong>Web 1.0:</strong> Contenido estático y pocos productores.</li>
+                    <li><strong>Web 2.0:</strong> Interacción y contenido colaborativo.</li>
+                    <li><strong>Web 3.0:</strong> Uso de inteligencia artificial y bases de datos.</li>
+                    <li><strong>Web 4.0:</strong> Comunicación entre máquinas y asistentes de voz.</li>
+                </ul>
+                <h3 class="sub-sub-title">Ejemplo de Aplicaciones Web</h3>
+                <ul>
+                    <li>Google</li>
+                    <li>Wikipedia</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-4">
+        <h2 class="section-header ixd-title" style="text-decoration: underline;">Temas Destacados</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" id="tema2">
+                <div class="card h-100 p-3">
+                    <img src="img/din-est.jpg" class="card-img-top" alt="Imagen de Páginas Estáticas y Dinámicas">
+                    <h2 class="sub-title">Páginas Estáticas y Dinámicas</h2>
+                    <p class="desc">Comparación entre páginas estáticas y dinámicas, ventajas y tecnologías...</p>
+                    <a href="tema2.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema3">
+                <div class="card h-100 p-3">
+                    <img src="img/html1.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Lenguaje HTML</h2>
+                    <p class="desc">Lenguaje base para estructurar páginas web, organizando títulos, párrafos,
+                        imágenes...</p>
+                    <a href="tema3.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema4">
+                <div class="card h-100 p-3">
+                    <img src="img/disen.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Diseño de Interfaces</h2>
+                    <p class="desc">Centrada en crear interfaces visuales intuitivas y atractivas para mejorar la
+                        experiencia del usuario...</p>
+                    <a href="tema4.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4" id="tema5">
+                <div class="card h-100 p-3">
+                    <img src="img/hiperm.jpg" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Diseño Web, Hipertexto e Hipermedia</h2>
+                    <p class="desc">Comparación entre páginas estáticas y dinámicas, ventajas y tecnologías...</p>
+                    <a href="tema5.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema6">
+                <div class="card h-100 p-3">
+                    <img src="img/cssimg.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Hojas de Estilo en Cascada</h2>
+                    <p class="desc">Usadas para definir la presentación y el diseño visual de páginas web...</p>
+                    <a href="tema6.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema7">
+                <div class="card h-100 p-3">
+                    <img src="img/front-img.jpg" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Desarrollo Front-End</h2>
+                    <p class="desc">Crear la interfaz y experiencia visual de una página web, interactuando directamente con los usuarios...</p>
+                    <a href="tema7.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4" id="tema8">
+                <div class="card h-100 p-3">
+                    <img src="img/js-img.webp" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Lenguaje JavaScript</h2>
+                    <p class="desc">Lenguaje de programación utilizado para crear interactividad y dinamismo en las páginas web, permitiendo manipular contenido y responder a acciones del usuario...</p>
+                    <a href="tema8.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema9">
+                <div class="card h-100 p-3">
+                    <img src="img/cliente.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Arquitectura Cliente-Servidor</h2>
+                    <p class="desc">Modelo de red donde el cliente solicita servicios o recursos al servidor, que procesa la solicitud y envía la respuesta al cliente...</p>
+                    <a href="tema9.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema10">
+                <div class="card h-100 p-3">
+                    <img src="img/react1.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Node.js, React y Next.js</h2>
+                    <p class="desc"> Entorno de JavaScript para el servidor; Biblioteca para interfaces de usuario dinámicas; Framework para aplicaciones React optimizadas....</p>
+                    <a href="tema10.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4" id="tema11">
+                <div class="card h-100 p-3">
+                    <img src="img/protocolo.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Servidores Web y Protocolos</h2>
+                    <p class="desc">Sistemas que entregan contenido web a través de protocolos como HTTP/HTTPS, asegurando la comunicación entre clientes y servidores para cargar sitios y aplicaciones...</p>
+                    <a href="tema11.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema12">
+                <div class="card h-100 p-3">
+                    <img src="img/phpp.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">Lenguaje PHP</h2>
+                    <p class="desc">Lenguaje de programación de servidor utilizado para desarrollar aplicaciones web dinámicas, permitiendo la interacción con bases de datos y la generación de contenido en tiempo real...</p>
+                    <a href="tema12.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" id="tema13">
+                <div class="card h-100 p-3">
+                    <img src="img/ajax-img.png" alt="html" class="card-img-top">
+                    <h2 class="sub-title">AJAX</h2>
+                    <p class="desc">Técnica que permite la actualización de contenido en una página web sin recargarla completamente, mejorando la interactividad y la experiencia del usuario...</p>
+                    <a href="tema13.html" class="text-primary mt-auto">
+                        <i class="fas fa-arrow-right"></i> Ver más
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enlazar archivo JavaScript externo -->
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+</body>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

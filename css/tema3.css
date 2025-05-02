@@ -1,0 +1,110 @@
+/* Contenedor de la introducción */
+.contenedor-introduccion {
+    display: flex; /* Usa Flexbox para disposición en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Asegura que la imagen y el texto estén bien distribuidos */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+/* Estilos para la imagen */
+.imagen-al-lado {
+    max-width: 200px; /* Controla el tamaño de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos para el texto */
+.texto-introduccion {
+    flex: 1; /* El texto ocupa el espacio restante */
+    font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
+    line-height: 1.6; /* Aumenta la altura de línea para mejorar la legibilidad */
+}
+
+/* Asegurar que la imagen esté alineada correctamente */
+.contenedor-introduccion img:last-child {
+    order: 2; /* Mueve la imagen al final (derecha) */
+}
+
+/* Estilo para simular terminal */
+.terminal {
+    background: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    font-family: "Courier New", monospace;
+    color: #fff;
+}
+
+.terminal-header {
+    background: #2b2b2b;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #333;
+}
+
+.terminal-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.terminal-buttons .btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.btn.red { background: #ff5f56; }
+.btn.yellow { background: #ffbd2e; }
+.btn.green { background: #27c93f; }
+
+.terminal-title {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.terminal-body {
+    padding: 12px;
+}
+
+pre {
+    background: #1e1e1e !important;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.comentario {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: #888;
+    background-color: #2d2d2d;
+    padding: 5px 10px;
+    border-left: 3px solid #6a9955;
+    display: inline-block;
+    font-style: italic;
+}
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}

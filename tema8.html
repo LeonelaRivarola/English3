@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenguaje JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema8.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo"> Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Lenguaje JavaScript</h1>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h2 class="ixd-title"><strong>¿Qué es JavaScript?</strong></h2>
+                <p class="ixd-description">JavaScript es un lenguaje de scripting basado en objetos utilizado para
+                    desarrollar aplicaciones cliente-servidor en Internet. Se embebe en documentos HTML y permite
+                    responder a eventos de usuario sin conexión a la red.</p>
+
+                <h3 class="sub-title">¿Cómo se ejecuta JavaScript?</h3>
+                <p class="ixd-description">JavaScript puede ejecutarse del lado del cliente en el navegador o
+                    del lado del servidor con entornos como Node.js. En los documentos HTML, el código
+                    JavaScript se incluye dentro de las etiquetas <code
+                        class="language-javascript">&lt;script&gt;</code> y se interpreta al
+                    cargar la página.</p>
+            </div>
+            <div class="col-md-3 ms-auto">
+                <img src="img/js.png" alt="javascript">
+            </div>
+        </div>
+
+
+        <div class="card p-4">
+
+            <div class="list-container border rounded p-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="sub-title">Comparativa: Java vs JavaScript</h3>
+                        <p class="ixd-description">Java es un lenguaje compilado, orientado a objetos, y más robusto.
+                            Por
+                            otro lado,
+                            JavaScript es interpretado, más flexible, y usado principalmente para interacciones web
+                            rápidas.
+                        </p>
+                    </div>
+                    <div class="col-md-6 no-border">
+                        <h3 class="sub-title">Comentarios en JavaScript</h3>
+                        <ul>
+                            <li><strong>Una línea:</strong> <code
+                                    class="language-javascript">// Este es un comentario</code></li>
+                            <li><strong>Multilínea:</strong> <code
+                                    class="language-javascript">/* Este es un comentario multilinea */</code></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="sub-title">Estructura del Código</h3>
+                        <p class="ixd-description">Las sentencias terminan opcionalmente con punto y coma (<code
+                                class="language-javascript">;</code>), lo cual
+                            mejora la claridad del
+                            código. Ejemplo: <code class="language-javascript">document.write("Hola Mundo");</code></p>
+                    </div>
+                    <div class="col-md-6 no-border">
+                        <h3 class="sub-title">Impresión</h3>
+                        <ul>
+                            <li><strong>document.write:</strong> Escribe texto o código HTML en el documento. Ejemplo:
+                                <code class="language-javascript">document.write("Hola JavaScript");</code>
+                            </li>
+                            <li><strong>alert:</strong> Muestra un mensaje en una ventana emergente. Ejemplo:
+                                <code class="language-javascript">alert("Hola JavaScript");</code>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="sub-title">Variables y Constantes</h3>
+                        <ul>
+                            <li><strong>Declaración:</strong> <code class="language-javascript">var</code>, <code
+                                    class="language-javascript">let</code>, <code
+                                    class="language-javascript">const</code>
+                            </li>
+                            <li><strong>Tipos de datos:</strong> Cadenas, números, booleanos</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 no-border">
+                        <h3 class="sub-title">Operadores</h3>
+                        <ul>
+                            <li><strong>Aritméticos:</strong> +, -, *, /, %</li>
+                            <li><strong>De comparación:</strong> ==, !=, >, <=< /li>
+                            <li><strong>Lógicos:</strong> &&, ||, !</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="sub-title">Control de Flujo</h3>
+                        <ul>
+                            <li><strong>Condicionales:</strong> <code class="language-javascript">if</code>, <code
+                                    class="language-javascript">else if</code>, <code
+                                    class="language-javascript">else</code></li>
+                            <li><strong>Bucles:</strong> <code class="language-javascript">for</code>, <code
+                                    class="language-javascript">for...in</code>, <code
+                                    class="language-javascript">while</code></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 no-border">
+                        <h3 class="sub-title">Entrada/Salida</h3>
+                        <ul>
+                            <li><strong>Alert:</strong> Muestra un mensaje informativo.</li>
+                            <li><strong>Confirm:</strong> Mensaje con opciones.</li>
+                            <li><strong>Prompt:</strong> Solicita entrada del usuario.</li>
+                            <li><strong>Console:</strong> Para debugging con <code
+                                    class="language-javascript">console.log</code>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <h2 class="ixd-title">¿Qué es el DOM?</h2>
+        <p class="ixd-description">El DOM (Document Object Model) es una interfaz que permite representar y manipular
+            documentos HTML y XML
+            de manera estructurada.</p>
+
+        <h3 class="sub-title">¿Qué permite hacer el DOM?</h3>
+        <ul>
+            <li>Cambiar contenido: <code
+                    class="language-javascript">document.getElementById('titulo').textContent = 'Nuevo título';</code>
+            </li>
+            <li>Agregar elementos: <code class="language-javascript">document.createElement('p');</code></li>
+            <li>Eliminar elementos: <code
+                    class="language-javascript">document.getElementById('elemento').remove();</code></li>
+            <li>Modificar estilos: <code
+                    class="language-javascript">document.getElementById('caja').style.backgroundColor = 'red';</code>
+            </li>
+        </ul>
+
+        <h2 class="ixd-title">Eventos en JavaScript</h2>
+        <p class="ixd-description">Usando <code class="language-javascript">addEventListener</code>, se pueden asignar
+            eventos a elementos HTML.
+            Ejemplo: </p>
+        <code class="language-javascript">boton.addEventListener("click", function() { alert("Botón clickeado"); });
+        </code>
+
+        <hr>
+
+        <!-- Nueva Sección de jQuery -->
+
+        <h2 class="ixd-title">jQuery</h2>
+        <h3 class="sub-title">¿Qué es jQuery?</h3>
+        <ul>
+            <li>Biblioteca multiplataforma de fácil aprendizaje.</li>
+            <li>Simplifica tareas complejas de JavaScript como llamadas AJAX y manipulación DOM.</li>
+        </ul>
+        <div class="card p-4 mt-5">
+            <h3 class="sub-title">Características principales</h3>
+            <ul>
+                <li>Manipulación HTML / DOM.</li>
+                <li>Manejo de CSS.</li>
+                <li>Métodos para eventos HTML.</li>
+                <li>Animaciones y efectos.</li>
+                <li>Soporte para AJAX.</li>
+            </ul>
+
+            <h2 class="sub-title">Ventajas de usar jQuery</h2>
+            <ul>
+                <li>Popular y ampliable.</li>
+                <li>Utilizado por grandes empresas como Google, Microsoft, IBM y Netflix.</li>
+                <li>Compatible con frameworks como Bootstrap.</li>
+            </ul>
+
+            <h3 class="sub-title">Formas de uso de jQuery</h3>
+            <pre><code class="language-html">&lt;script src="jquery-3.5.1.min.js"&gt;&lt;/script&gt;</code></pre>
+            <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;</code></pre>
+
+            <h3 class="sub-title">Sintaxis básica de jQuery</h3>
+            <p>$(selector).action()</p>
+            <pre><code class="language-javascript">// Oculta un elemento
+$(this).hide();</code></pre>
+
+            <h3 class="sub-title">Efectos en jQuery</h3>
+            <pre><code class="language-javascript">// Ocultar párrafos al hacer clic
+$("#hide").click(function() {
+$("p").hide();});</code></pre>
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

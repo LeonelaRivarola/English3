@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidores Web y Protocolos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema11.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo"> Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Servidores Web y Protocolos</h1>
+        <hr>
+
+        <h2 class="ixd-title">¿Qué es un Servidor Web?</h2>
+        <p class="ixd-description">Un servidor web es un software o hardware que almacena, procesa y entrega páginas web
+            a los usuarios a través de Internet. Funciona como el puente entre los navegadores (clientes) y los archivos
+            o aplicaciones web alojados en el servidor.</p>
+
+        <h3 class="sub-title">¿Cómo Funciona un Servidor Web?</h3>
+        <ol class="ixd-list">
+            <li><strong>- El cliente (navegador):</strong> El usuario introduce una dirección web (URL) en su navegador
+                o hace clic en un enlace. El navegador envía una solicitud HTTP al servidor web.</li>
+            <li><strong>- El servidor web:</strong> Recibe la solicitud, busca el archivo solicitado y lo devuelve al
+                cliente.</li>
+            <li><strong>- El navegador:</strong> Renderiza la respuesta y muestra la página al usuario.</li>
+        </ol>
+
+        <h3 class="sub-title">Formas de Conexión a Internet</h3>
+        <ul>
+            <li><strong>A través de un ISP:</strong> El servidor está conectado a través de una red pública o privada
+                proporcionada por un proveedor de servicios.</li>
+            <li><strong>Enlace dedicado:</strong> Conexión directa con acceso constante a Internet, ideal para empresas.
+            </li>
+        </ul>
+
+        <h3 class="sub-title">Direcciones Electrónicas en Servidores</h3>
+        <div class="row">
+            <div class="col-md-7 barra-izq">
+                <h4 class="sub-sub-title">Direcciones IP:</h4>
+                <p class="ixd-description">Identifican a los equipos en la red mediante una secuencia numérica, como
+                    192.168.1.1 o 200.45.72.98.</p>
+                <h4 class="sub-sub-title">Nombre de dominio:</h4>
+                <p class="ixd-description">Son nombres fáciles de recordar, como www.ejemplo.com. Los DNS traducen los
+                    nombres a direcciones IP.</p>
+            </div>
+            <div class="col-md-3">
+                <img src="img/ip.png" class="img-ip" alt="ip imagen">
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="img/http.png" alt="image http">
+            </div>
+            <div class="col-md-7 barra-der">
+                <h2 class="ixd-title">Protocolos de Comunicación</h2>
+                <ul>
+                    <li><strong>HTTP:</strong> Permite la transferencia de páginas web entre cliente y servidor.</li>
+                    <li><strong>HTTPS:</strong> Versión segura de HTTP que encripta los datos.</li>
+                    <li><strong>FTP:</strong> Usado para transferir archivos entre el cliente y el servidor.</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <h3 class="sub-title">Acceso : Localizador Universal de Recursos (Uniform Resource Locator - URL) </h3>
+        <p class="ixd-description">El URL permite ubicar la información contenida en un servidor. Contiene una descripción completa de la ubicación de documentos dentro de los servidores.</p>
+        <img src="img/url.png" alt="sdad" class="text-center">
+
+        <h3 class="sub-title">Páginas Dinámicas y Servidores Web</h3>
+        <p class="ixd-description">Los servidores web no solo sirven contenido estático, también pueden procesar
+            contenido dinámico usando tecnologías como PHP, JSP, y ASP.NET.</p>
+
+        <div class="row">
+            <div class="col-md-5">
+                <h3 class="sub-title ">Protocolos HTTP</h3>
+                    <p class="ixd-description">HTTP es un protocolo sin estado utilizado para intercambiar documentos
+                        entre
+                        servidores y clientes. El cliente establece una conexión TCP, realiza la petición y el servidor
+                        responde
+                        con el contenido solicitado.</p>
+            </div>
+            <div class="col-md-5">
+                <h3 class="sub-title">Métodos HTTP</h3>
+                <ul>
+                    <li><strong>GET:</strong> Recupera información.</li>
+                    <li><strong>POST:</strong> Envía datos al servidor.</li>
+                    <li><strong>DELETE:</strong> Elimina un recurso.</li>
+                    <li><strong>HEAD:</strong> Recupera solo las cabeceras de la respuesta.</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

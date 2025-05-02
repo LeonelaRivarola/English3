@@ -1,0 +1,88 @@
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra el contenido dentro del contenedor */
+    width: 100%;
+    max-width: 800px; /* Ajusta según el tamaño deseado */
+    margin:30px auto; /* Centra el contenedor en la página */
+    position: relative;
+}
+
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa oscura semitransparente */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    height: 200px; /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+}
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-text{
+    color: #83838a;
+}
+
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub-sub-title {
+    color: #34495e;
+    font-size: 1.2em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}

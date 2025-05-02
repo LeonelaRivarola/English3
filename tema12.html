@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación sobre PHP</title>
+    <!-- Incluyendo Bootstrap desde un CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema12.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo"> Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Introducción a PHP</h1>
+        <hr>
+
+        <!-- Sección 1: Introducción -->
+        <h2 class="ixd-title">¿Qué es PHP?</h2>
+        <p class="ixd-description">PHP es un lenguaje de script del lado del servidor, similar a ASP, JSP o ColdFusion.
+            Los scripts PHP se
+            incrustan en documentos HTML, el servidor los interpreta y ejecuta antes de mostrar la página al
+            cliente. El cliente solo ve el resultado, no el código.</p>
+        <!-- Carrusel -->
+        <div id="carouselPHP" class="carousel slide mmt-4 mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselPHP" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselPHP" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselPHP" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Contenedor de imágenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/php2.webp" class="d-block w-100" alt="Introducción a PHP">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Introducción a PHP</h5>
+                        <p>PHP es un lenguaje de programación del lado del servidor ideal para crear sitios web
+                            dinámicos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/php1.png" class="d-block w-100" alt="Ventajas de PHP">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Ventajas de PHP</h5>
+                        <p>Fácil de aprender, potente y ampliamente soportado por una comunidad activa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/php3.png" class="d-block w-100" alt="Sintaxis de PHP">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Sintaxis de PHP</h5>
+                        <p>Fácil de integrar con HTML, lo que permite desarrollar aplicaciones web rápidamente.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPHP" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPHP" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <hr>
+
+
+        <h3 class="sub-title">¿Por qué PHP?</h3>
+        <p class="ixd-description"><strong>Ventajas:</strong> PHP es potente, fácil de aprender, tiene distribución
+            libre y ofrece acceso a bases de datos y
+            otras funcionalidades orientadas a la red. Además, cuenta con un amplio soporte en la web.</p>
+
+        <div class="row">
+            <div class="col-md-6 no-border">
+                <h3 class="sub-title">Sintaxis básica de PHP</h3>
+                <p>PHP es sensible a las mayúsculas. La forma de incrustar código PHP es:</p>
+                <pre><code>&lt;?PHP ... ?&gt;</code></pre>
+                <p>O también se puede usar:</p>
+                <pre><code>&lt;?= expresión ?&gt;</code></pre>
+                <p>Para imprimir en pantalla, se usa <code>echo</code> o <code>print</code>.</p>
+                <h4 class="sub-sub-title">Ejemplo básico:</h4>
+                <pre><code>&lt;HTML&gt;
+    &lt;HEAD&gt;
+        &lt;TITLE&gt;Mi primer programa en PHP&lt;/TITLE&gt;
+    &lt;/HEAD&gt;
+    &lt;BODY&gt;
+        &lt;?PHP
+        print ("Hola mundo");
+        ?&gt;
+    &lt;/BODY&gt;
+&lt;/HTML&gt;</code></pre>
+            </div>
+
+            <h3 class="sub-title">Inclusión de archivos externos</h3>
+            <ul>
+                <li>include() y require(): ambos incluyen y evalúan el archivo especificado.</li>
+                <li>Diferencia: include() produce un warning si hay error, mientras que require() detiene la carga de la
+                    página con un error fatal. Se usa require() cuando el error debe interrumpir la carga.</li>
+            </ul>
+
+            <div class="col-md-6">
+                <h3 class="sub-title">Tipos de Datos en PHP</h3>
+                <p class="ixd-description">PHP soporta 8 tipos básicos de datos:</p>
+                <ul>
+                    <li><strong>Escalares:</strong> boolean, integer, double, string.</li>
+                    <li><strong>Compuestos:</strong> array, object.</li>
+                    <li><strong>Especiales:</strong> resource, NULL.</li>
+                </ul>
+
+                <h4 class="sub-sub-title">Ejemplo de uso de var_dump:</h4>
+                <pre><code>$x = 10.5;
+        var_dump($x);</code></pre>
+
+                
+        </div>
+
+
+
+
+        <div class="info-box">
+            <!-- Columna 1 -->
+            <div class="content">
+                <h3 class="sub-title">Variables en PHP</h3>
+                <ul>
+                    <li><strong>Declaración:</strong> Comienzan con $ y son sensibles a mayúsculas.</li>
+                    <li><strong>Ámbito:</strong> Global o local dentro de funciones.</li>
+                    <li><strong>Predefinidas:</strong> $_GET, $_POST, $_SESSION, etc.</li>
+                </ul>
+
+                <h3 class="sub-sub-title">Ejemplo de Variable:</h3>
+                <pre><code>$valor = 5;
+        print $valor;</code></pre>
+
+                <hr>
+
+                <h3 class="sub-title">Constantes</h3>
+                <ul>
+                    <li><strong>Definición:</strong> Usar <code>define()</code> y no lleva $.</li>
+                </ul>
+
+                <h3 class="sub-sub-title">Ejemplo de Constante:</h3>
+                <pre><code>define("CONSTANTE", "Hola");
+        print CONSTANTE;</code></pre>
+            </div>
+
+            <!-- Columna 2 -->
+            <div class="content">
+
+                <h3 class="sub-title">Operadores</h3>
+                <ul>
+                    <li><strong>Aritméticos:</strong> +, -, *, /</li>
+                    <li><strong>Comparación:</strong> ==, !=, <,>
+                    </li>
+                    <li><strong>Lógicos:</strong> and, or, &&, ||</li>
+                </ul>
+
+                <hr>
+
+                <h3 class="sub-title">Estructuras de Control</h3>
+                <ul>
+                    <li><strong>if-else:</strong> Ejecuta código si se cumple una condición; si no, ejecuta el bloque
+                        <code>else</code>.</li>
+                    <li><strong>while:</strong> Ejecuta código mientras la condición sea verdadera.</li>
+                    <li><strong>do-while:</strong> Similar al <code>while</code>, pero garantiza que el código se
+                        ejecute al menos una vez.</li>
+                    <li><strong>for:</strong> Ejecuta código un número determinado de veces.</li>
+                    <li><strong>foreach:</strong> Recorre arrays y ejecuta código para cada valor.</li>
+                    <li><strong>switch:</strong> Ejecuta bloques de código según el valor de una variable.</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <h2 class="ixd-title">Formularios en PHP</h2>
+        <p class="ixd-description">Los formularios HTML permiten enviar datos al servidor, que luego pueden ser
+            procesados con PHP. Aquí te
+            mostramos cómo procesar un formulario sencillo con datos.</p>
+        <div class="card p-4 mb-5">
+            <form method="post" action="#" onsubmit="mostrarConfirmacion()">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

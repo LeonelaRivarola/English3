@@ -1,0 +1,35 @@
+img{
+    width: 80%;
+    margin-right: 0;
+}
+.ixd-title {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.ixd-description {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+.sub-title {
+    color: #2980b9;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.col-md-6 {
+    border-right: 1px solid #ddd; /* Línea en el lado derecho de cada columna */
+}
+
+.no-border {
+    border-right: none; /* Elimina la línea del borde derecho */
+}
+
+.card {
+    margin-bottom: 30px; /* Ajusta el valor según lo que necesites */
+  }
+  
+  footer {
+    margin-top: 30px; /* Ajusta el valor según lo que necesites */
+  }
+  

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 7 - Desarrollo Front-End</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tema7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png" alt="logo"> Programacion WEB
+            </a>
+
+            <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menú lateral (offcanvas) -->
+    <div class="offcanvas offcanvas-end bg-dark text-white" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">POW</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <hr class="menu-divider">
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema2.html">Páginas Estáticas y Dinámicas</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema3.html">Lenguaje HTML</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema4.html">Diseño de Interfaces</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema5.html">Diseño Web, Hipertexto e
+                        Hipermedia</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema6.html">Hojas de Estilo en Cascada</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema7.html">Desarrollo Front-End</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema8.html">Lenguaje JavaScript</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema9.html">Arquitectura Cliente-Servidor</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema10.html">Node.js, React y Next.js</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema11.html">Servidores Web y Protocolos</a>
+                </li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema12.html">Lenguaje PHP</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="tema13.html">AJAX</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <h1 class="text-center">Desarrollo Front-End</h1>
+        <hr>
+        <div class="image-container">
+            <img src="img/front.webp" alt="Front-End">
+            <div class="overlay">
+                <h2>Front-End Developed</h2>
+                <p>Construcción de interfaces modernas y dinámicas</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <h3 class="sub-title">Problemática del Desarrollo con CSS</h3>
+                <p class="ixd-description">El desarrollo con CSS puede ser un proceso lento, ya que cada proyecto requiere un diseño único,
+                    preparación
+                    de gráficos y depuración para navegadores.</p>
+                <p class="ixd-description">No existen normas estrictas de nomenclatura e identificación, lo que dificulta la colaboración en
+                    proyectos
+                    grandes.</p>
+
+                <h3 class="sub-title">¿Qué es un Framework CSS?</h3>
+                <p class="ixd-description">Es un conjunto de herramientas y convenciones que facilitan la reutilización de código, reducen el
+                    tiempo de
+                    desarrollo y mejoran la estructura del proyecto.</p>
+
+            </div>
+
+        </div>
+
+        <div class="list-container border rounded p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="ixd-title">Ventajas</h2>
+                    <ul>
+                        <li>Aumenta la productividad</li>
+                        <li>Código más consistente y estructurado</li>
+                        <li>Facilita la depuración y el mantenimiento</li>
+                        <li>Optimiza el trabajo en equipo</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="ixd-title">Desventajas</h2>
+                    <ul>
+                        <li>Curva de aprendizaje inicial</li>
+                        <li>Posible exceso de código</li>
+                        <li>Clases no semánticas</li>
+                        <li>Restricciones en el diseño</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <h3 class="sub-title">Panorámica de Frameworks CSS</h3>
+        <p class="ixd-description">Existen varios frameworks CSS como Bootstrap, Foundation y Materialize que facilitan la creación de
+            interfaces responsivas y compatibles con distintos navegadores.</p>
+
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Card con Bootstrap -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="img/Bootstrap.png" class="card-img-top" alt="Imagen Bootstrap">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap</h5>
+                            <p class="card-text">Framework CSS popular y versátil para crear interfaces</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#bootstrapModal">Abrir Modal</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card con Materialize -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="img/materialize.png" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Materialize</h5>
+                            <p class="card-text">Framework CSS basado en Material Design de Google</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#materializeModal">Abrir Modal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Bootstrap con Carrusel -->
+        <div class="modal fade" id="bootstrapModal" tabindex="-1" aria-labelledby="bootstrapModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bootstrapModalLabel">Modal de Bootstrap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>¿Qué es Bootstrap?</h5>
+                        <p>Bootstrap es un framework front-end de código abierto para el desarrollo de sitios web y
+                            aplicaciones web responsivas. Fue creado por los ingenieros de Twitter y se ha convertido en
+                            uno de los frameworks CSS más populares del mundo.</p>
+
+                        <h6>Características clave:</h6>
+                        <ul>
+                            <li>Diseño responsivo y adaptativo</li>
+                            <li>Componentes reutilizables como botones, formularios, alertas, etc.</li>
+                            <li>Basado en un sistema de rejilla de 12 columnas</li>
+                            <li>Compatibilidad con todos los navegadores modernos</li>
+                        </ul>
+
+                        <h6>Enlaces útiles:</h6>
+                        <ul>
+                            <li><a href="https://getbootstrap.com/" target="_blank">Documentación oficial de
+                                    Bootstrap</a></li>
+                            <li><a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                    target="_blank">Guía de inicio rápido</a></li>
+                        </ul>
+
+                        <!-- Carrusel de imágenes -->
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/bootstrap1.png" class="d-block w-100" alt="Imagen 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/bootstrap2.png" class="d-block w-100" alt="Imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/bootstrap3.png" class="d-block w-100" alt="Imagen 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+
+                        <p>Bootstrap es ideal para aquellos que buscan rapidez en el desarrollo sin tener que diseñar
+                            todo desde cero.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Materialize -->
+        <div class="modal fade" id="materializeModal" tabindex="-1" aria-labelledby="materializeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="materializeModalLabel">Modal de Materialize</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>¿Qué es Materialize?</h5>
+                        <p>Materialize es un framework front-end basado en Material Design de Google, el cual es un
+                            sistema de diseño visual que tiene como objetivo crear interfaces limpias y modernas, pero
+                            también funcionales.</p>
+
+                        <h6>Características clave:</h6>
+                        <ul>
+                            <li>Diseño basado en el concepto Material Design</li>
+                            <li>Componentes modernos y elegantes como tarjetas, botones flotantes, y más</li>
+                            <li>Rejilla responsiva y clases de utilidad</li>
+                            <li>Animaciones integradas para una experiencia de usuario más dinámica</li>
+                        </ul>
+
+                        <h6>Enlaces útiles:</h6>
+                        <ul>
+                            <li><a href="https://materializecss.com/" target="_blank">Documentación oficial de
+                                    Materialize</a></li>
+                            <li><a href="https://materializecss.com/getting-started.html" target="_blank">Guía de inicio
+                                    rápido</a></li>
+                        </ul>
+
+                        <!-- Carrusel de imágenes -->
+                        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/materialize1.png" class="d-block w-100"
+                                        alt="Imagen 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/materialize2.png" class="d-block w-100"
+                                        alt="Imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/materialize3.png" class="d-block w-100"
+                                        alt="Imagen 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+
+                        <p>Materialize es ideal para aquellos que buscan seguir las pautas de diseño de Google para
+                            crear interfaces coherentes y visualmente atractivas.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script> <!-- Aquí llamas a tu archivo JavaScript -->
+    <button id="btnScrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+
+<footer class="footer bg-dark text-white text-center py-3">
+    <div class="container">
+        <p class="mb-1">&copy; 2024 Programación Web. Todos los derechos reservados.</p>
+        <p class="mb-0">
+            <a href="#" class="text-white mx-2">Términos y Condiciones</a> |
+            <a href="#" class="text-white mx-2">Política de Privacidad</a>
+        </p>
+    </div>
+</footer>
+
+</html>

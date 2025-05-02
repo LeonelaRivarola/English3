@@ -1,0 +1,58 @@
+.desc {
+    color: rgb(105, 99, 99);
+    font-size: small;
+}
+
+.card-img-top {
+    width: 100px;
+}
+
+.carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel img {
+    height: 350px;
+    /* Ajusta la altura según prefieras */
+    object-fit: cover;
+    /* Asegura que las imágenes se ajusten sin deformarse */
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+.carousel-item img {
+    transition: transform 0.5s ease-in-out;
+    /* Transición suave al cambiar las imágenes */
+}
+
+.carousel-item {
+    height: 350px;
+    /* Ajusta la altura del carrusel según lo necesites */
+}
+
+.carousel-inner {
+    /* z-index: 1; */
+    border-radius: 15px;
+    /* Borde redondeado para el carrusel */
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%;
+    /* Se asegura que las imágenes llenen todo el ancho del contenedor */
+    object-fit: cover;
+    /* Ajusta la imagen sin deformarla, cubriendo el área */
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+    /* Un pequeño efecto de zoom al pasar el ratón */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Botones más suaves y transparentes */
+    border-radius: 50%;
+    /* Forma redonda */
+}
